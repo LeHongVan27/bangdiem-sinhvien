@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8">       
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BẢNG ĐIỂM</title>
-        <style>
-            table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-            }
-        </style>
-    </head>
-    <body>    
-        <h2>BẢNG ĐIỂM SINH VIÊN</h2>  
+<head>
+    <meta charset="UTF-8">       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BẢNG ĐIỂM SINH VIÊN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <span class="badge">BẢNG ĐIỂM</span>
+        <h2>BẢNG ĐIỂM SINH VIÊN</h2>
         <table>
-            <tr>
-                <th>STT</th>
-                <th>Môn học</th>
-                <th>Điểm</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="text-left">Xây dựng ứng dụng Web</td>
-                <td>9.5</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="text-left">Cơ sở dữ liệu</td>
-                <td>9.0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="text-left">Cấu trúc dữ liệu và thuật toán</td>
-                <td>9.8</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="text-left">Mật mã lượng tử</td>
-                <td>9.6</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="text-left">Tiếng anh nâng cao 1</td>
-                <td>9.7</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-left"><strong>Điểm trung bình</strong></td>
-                <td><strong>9.5</strong></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th class="col-stt">STT</th>
+                    <th class="col-mon">Môn học</th>
+                    <th class="col-diem">Điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Xây dựng ứng dụng Web</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cơ sở dữ liệu</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cấu trúc dữ liệu và thuật toán</td>
+                    <td>9.8</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mật mã lượng tử</td>
+                    <td>9.6</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Tiếng anh nâng cao 1</td>
+                    <td>9.7</td>
+                </tr>
+                <!-- Dòng điểm trung bình có class riêng -->
+                <tr class="row-average">
+                    <td colspan="2">Điểm trung bình</td>
+                    <td>9.5</td>
+                </tr>
+            </tbody>
         </table>
-    </body>
+    </div>
+</body>
 </html>
